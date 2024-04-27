@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mybio</title>
+    <link rel="stylesheet" href="stylesheets.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rubik">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bungee Spice">
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    
+</head>
+<body>
+    <header class="header">
+        <img src="klogo.jpg" class="logo">
+ 
+        <nav class="navbar">
+            <a href="#home" style="--i:1" class="active">Home</a>
+            <a href="#about" style="--i:2" >About</a>
+            <a href="#skill" style="--i:3" >Skill</a>
+            <a href="#alled" style="--i:4" >Education</a>
+            <a href="#contact" style="--i:5" >Contact</a>
+        </nav>
+    </header>
+    <section class="home" id="home">
+        <div class="home-content">
+            
+            <h3>Hello,It's Me</h3>
+            <h1 id="kar">Karthik B</h1>
+            <h3>And i'm a <span id="text"></span></h3>
+            <p>Glad to see you Here...! </p>
+            <div class="home-sci ">
+                <a href="https://www.facebook.com/karthikbabu.karthikbabu.581"><i class='bx bxl-facebook'></i></a>
+                <a href="https://www.instagram.com/karthikaaradhya2022/?hl=en" style="--i:7" ><i class='bx bxl-instagram'></i></a>
+                <a href="mailto:karthikvbamacros@gmail.com"style="--i:8" ><i class='bx bx-mail-send' ></i></a>
+                <a href="https://twitter.com/Karthik23957298" style="--i:9" ><i class='bx bxl-twitter' ></i></a>
+                <a href="https://www.linkedin.com/in/karthik-b-486835283/" style="--i:10" ><i class='bx bxl-linkedin-square'></i></a>
+            
+            </div>
+           
+            <a href="oldr.pdf" onclick="morebtn()" class="morebtn">Download Resume <i class='bx bx-download' ></i></a>
+            </div>
+            <div class="img">
+                <img src="fstpic.jpeg" alt="">
+            </div>
+
+    </section>
+    <script>
+        var typed = new Typed("#text",{
+            strings:["Frontend Developer","Quick Learner","Android Developer"],
+            typeSpeed:100,
+            backSpeed:100,
+            backDelay:1000,
+            loop:true
+            });
+
+            function reveal() {
+      function reveal() {
+        var reveals = document.querySelectorAll(".reveal");
+        for (var i = 0; i < reveals.length; i++) {
+          var windowHeight = window.innerHeight;
+          var elementTop = reveals[i].getBoundingClientRect().top;
+          var elementVisible = 100;
+          if (elementTop < windowHeight - elementVisible) {
+            reveals[i].classList.add("active");
+          } else {
+            reveals[i].classList.remove("active");
+          }
+        }
+      }
+      window.addEventListener("scroll", reveal);
+    }
+
+// To check the scroll position on page load
+reveal(); 
+    </script>
+    
+
+    
+       <section class="about"  id="about" >
+        <div class="aboutimg reveal">
+          <img src="me.jpeg" alt="kk">
+        </div>
+        <div class="about-text reveal">
+          <h2>About<span>ME</span></h2>
+                  <p>Hi, This is Karthik B Aradhya . I'm currently a Student pursuing my BCA  <strong>(Bachelor Of Computer Applications)</strong> at KGI Bangalore,India.
+                    Aside from academics, I'm an active member of various clubs and organizations related to computer science on campus. Being involved in these activities has given me opportunities to interact with like-minded peers, participate in hackathons and coding competitions, and attend workshops and seminars to further enhance my skills
+                    In the future, I hope to specialize in a specific area of computer science, whether it be artificial intelligence, cloud computing cybersecurity, software development, or something else that captures my interest. My ultimate goal is to contribute to innovative projects and make a positive impact on society through technology.</p>
+              </div>
+       </section>
+
+
+
+       <section>
+        <div class="service" id="skill">
+            <div class="container">
+                <h1 class="sub-title reveal"> My <span> Skills</span></h1>
+                <div class="service-list reveal">
+                    <div>
+                        <i class='bx bx-command reveal' style='color:#cad114'  ></i>
+                        <h2> Management </h2>
+                        <p class="reveal">Management is the process of planning, organizing, leading, and controlling resources (human, financial, physical, or informational) to achieve organizational goals effectively and efficiently.</p>
+                    </p>
+                        <a href="#" class="read">Lern more</a>
+                    
+                    </div>
+                    <div>
+                        <i class='bx bxs-color reveal' style='color:#14d11c'  ></i>
+                        <h2> Creativity</h2>
+                        <p class="reveal">Creativity is the ability to generate new and valuable ideas, solutions, and insights. It is a cognitive process that involves thinking, imagining, and combining different elements in novel and meaningful ways</p>
+                        <a href="#" class="read">Lern more</a>
+                    
+                    </div>
+                    <div>
+                        <i class='bx bxl-dev-to reveal' style='color:#d12f14'  ></i>
+                        <h2>Development</h2>
+                        <p class="reveal"> Development is a broad and multidimensional term that can refer to various aspects, including economic, social, and human development </p>
+                        <a href="#" class="read">Lern more</a>
+                    
+                    </div>
+                    <div>
+                        <i class='bx bx-desktop reveal' style='color:#b2b50a'  ></i>
+                        <h2>Designing</h2>
+                        <p class="reveal">Design is a versatile term that can refer to a wide range of activities and disciplines. It primarily involves the process of creating plans, blueprints, or specifications for the construction of objects, systems, processes, or experiences.</p>
+                        <a href="#" class="read">Lern more</a>
+                    
+                    </div>
+                </div>
+            </div>
+        </div>
+       </section>
+       <div class="alled" id="alled">
+        <div class="myed reveal ">
+         <img src="graduation.gif" alt="">
+         <h2><span>My </span>Education</h2>
+        
+       </div>
+        
+        <div class="container">
+         <div class="box reveal ">
+           <span></span>
+           <div class="content ">
+             <h2 class="reveal">Bachelor Of Computer Applications</h2>
+             <p class="reveal">Pursuing my BCA degree  at Koshys Institute Of Management Studies Bangalore,India.</p>
+             
+           </div>
+         </div>
+         <div class="box reveal">
+           <span></span>
+           <div class="content ">
+             <h2 class="reveal">12<sup>th</sup>Boards.</h2>
+             <p class="reveal">Completed my 12<sup>th</sup> Boards at Kite PU College,Bangalore India.under Department of pre-university Education karnataka.
+             With an overall percentage of <strong>87%</strong> in the stream of Science.</p>
+            
+           </div>
+         </div>
+         <div class="box reveal">
+            <span></span>
+            <div class="content">
+              <h2 class="reveal">Certifications and Achievements.</h2>
+              <ul class="reveal">
+              <li>Python Bootcamp Udemy</li>
+              <li>
+               Visually Effective Excel Dashboards
+              </li>
+              <li>Excel VBA Macros</li>
+              <li>Basic of Android Development</li>
+              
+            </ul>
+            </div>
+          </div>
+          </div>
+         </div>
+         <div class="contact reveal" id="contact">
+   
+            <div class="conimage">
+              <img src="contact.jpg" alt="">
+            </div>
+            <div class="cform reveal">
+              <h2>Get In Touch..!</h2>
+              <input class="reveal" type="text" placeholder="Name" name="Name">
+            
+              <input  class="reveal" type="text"  placeholder="Gmail"name="Gmail" id="2">
+             
+            <textarea class="reveal" placeholder="Message"name="textarea" id="" cols="20" rows="7"></textarea>
+            <button type="submit">Send <i class='bx bxs-send'></i></button>
+            </div>
+           </div>
+        <div class="footer">
+           <div class="footercontent">
+              <p>Copyright © 2023 Karthik Made with <i class='bx bxs-heart bx-flashing' style='color:#e61a1a' ></i> by KB</p> 
+            </div>
+        </div>
+        </div>
+
+
+</body>
+</html>
+
